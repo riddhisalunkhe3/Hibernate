@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+	<session-factory>
+	<property name="connection.driver">com.mysql.cj.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/hypothetical_thing</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">Riddhi@23</property>
+	<property name="hibernet.dialect">org.hibernet.dialect.MYSQl8Dialect</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<mapping class="com.hibernet.task1.Aliens"/>
+	</session-factory>
+	</hibernate-configuration>
